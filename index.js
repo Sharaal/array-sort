@@ -16,4 +16,7 @@ module.exports.orderAsc = (by = item => item) => (itemA, itemB) => {
   return 0
 }
 
-module.exports.orderDesc = by => (itemA, itemB) => -module.exports.orderAsc(by)(itemA, itemB)
+module.exports.orderDesc = by => {
+  const orderAsc = module.exports.orderAsc(by)
+  return (itemA, itemB) => -orderAsc(itemA, itemB)
+}
