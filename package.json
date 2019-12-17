@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "array-sort",
+  "version": "0.0.0",
+  "description": "",
+  "devDependencies": {
+    "lodash": "^4.17.15"
+  }
+}
